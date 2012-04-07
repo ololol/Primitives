@@ -1,0 +1,17 @@
+%div(id = 'wrapper')
+  %div.pattern(id = 'hero_master')
+    %h1= 'Твой Primitive!'
+
+    = form_for @hero do |f|
+      %span.button_panel
+        %p
+          = f.label 'Создание твоего Primitive'
+        %p.custom_button
+          = f.button 'Собрать персонаж', :type => :button
+        %p.random_button
+          = f.button 'Мне повезет', :type => :button
+      %p
+        = render :partial => 'heros/generate_random', :locals => {:field => f}
+        = render :partial => 'heros/generater_custom', :locals => {:field => f}
+
+      = f.submit 'Завершить!', :class => :button

@@ -1,0 +1,13 @@
+%div(id = 'wrapper')
+  %div.pattern(id = 'login_form')
+    %span.join_us
+      = link_to image_tag('war.png', :alt => 'Тоже хочу In Da Primitives!'), :controller => :users, :action => :new
+
+    %h1= 'In Da Primitives!'
+
+    = form_tag sessions_path do
+      %p
+        =text_field_tag :user_login, 'твой e-mail'
+      %p
+        =password_field_tag :password, 'пароль'
+      %p= submit_tag  'Войти', :class => :button

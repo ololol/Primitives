@@ -1,0 +1,13 @@
+%div(id = 'wrapper')
+  %div.pattern(id = 'login_form')
+    %h1= 'Хочу In Da Primitives!'
+
+    = form_for @user do |f|
+      %p
+        = f.text_field :user_login, :value => 'твой e-mail'
+      %p
+        = f.password_field :password, :value => 'пароль'
+      %p
+        = f.password_field :password_confirmation, :value => 'пароль'
+      %p
+        = f.submit 'Хочу свой Primitive!', :class => :button

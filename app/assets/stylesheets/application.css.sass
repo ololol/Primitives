@@ -1,0 +1,176 @@
+html, body
+    height: 100%
+    background: #eee
+
+    button,
+    input.button
+        font-family: "museo-700", "helvetica", "arial", "sans-serif"
+        font-size: 16px
+        font-weight: bold
+        text-shadow: #5d5d5d 1px 1px 1px
+        color: #d7d7d7
+        padding: 5px 5px 5px 5px
+        border-color: #B7B7C6
+        border-radius: 5px
+        box-shadow: #B7B7C6 0 0.08em 0.2em 1px inset
+        background-color: #a4a4a4
+
+    input
+        font-family: "museo-700", "helvetica", "arial", "sans-serif"
+        border-radius: 10px
+        padding: 3px 5px 3px 5px
+
+    a
+        text-decoration: none
+        color: #B7B7B6
+
+    a:hover
+        text-decoration: none
+        color: #B7B7B6
+
+    .pattern
+        overflow: hidden
+        border: 3px solid #fff
+        background-color: #fff
+        box-shadow: #000 0 0.08em 0.2em 1px inset
+        -moz-box-shadow: 1px 1px 6px
+        -webkit-box-shadow: 1px 1px 6px #000
+        transition-duration: 0.3s
+
+    .handler
+        display: block
+        width: 40px
+        height: 122px
+        text-indent: -99999px
+        background-image: transparent url(rewind.png)
+        outline-style: none
+        position: absolute
+        top: 0px
+        left: -40px
+        background-repeat: no-repeat
+
+    #wrapper
+        position: relative
+        min-height: 100%
+        height: auto !important
+        height: 100%
+        margin:  0 auto
+        font-family: "museo-700", "helvetica", "arial", "sans-serif"
+        text-shadow: #333 1px 1px 1px
+        color: #B7B7B6
+        text-indent: 10px
+        letter-spacing: -1px
+
+        #login_form
+            margin: 10% 32% 0 32%
+            padding: 10px 0px 10px 40px
+            border-radius: 20px
+
+            .join_us
+                width: 64px
+                height: 64px
+                display: block
+                float: right
+                margin-top: 20px
+                margin-right: 45px
+                z-index: 10
+
+        #hero_master
+            margin: 5% 15% 5% 15%
+            padding: 10px 0px 20px 40px
+            border-radius: 20px
+
+            #random_generator
+                display: none
+
+            #custom_generator
+                display: none
+
+                .initial_points
+                    border-radius: 50px
+                    width: 64px
+                    height: 64px
+                    display: block
+                    float: right
+                    margin-top: 20px
+                    margin-right: 45px
+                    z-index: 10
+
+        #field
+            min-height: 585px
+            min-width: 1240px
+            margin-right: 220px
+            border-radius: 20px
+
+        ul.stuff
+            min-width: 150px
+            min-height: 500px
+            border-radius: 20px 0px 0px 20px
+
+    ul#enemy
+        position: relative
+        list-style: none
+        height: 100px
+        margin-top: -100px
+        border-radius: 20px 20px 0px 0px
+        font-size: 36px
+        font-weight: bold
+        clear: both
+
+        li
+            float: left
+            margin: 0px 10px 0px 0px
+            bottom: 0px
+
+        a
+            cursor: pointer
+            position: relative
+            float: left
+            bottom: -50px
+            line-height: 20px
+            width: 210px
+
+        .title
+            display: block
+            height: 26px
+            text-shadow: 1px 1px 1px #000
+            color: #B7B7B6
+            text-indent: 10px
+
+            a:hover
+                color: #54504F
+
+        .description
+            width: 140px
+            height: 80px
+            background-color: #B7B7B6
+            border: 3px solid #fff
+            color: #fff
+            display: block
+            font-size: 24px
+            margin-top: 10px
+            padding: 10px
+            -moz-box-shadow: 1px 1px 6px #000
+            -webkit-box-shadow: 1px 1px 6px #000
+            box-shadow: 1px 1px 6px #000
+            -moz-border-radius: 10px
+            -webkit-border-radius: 10px
+            border-radius: 10px
+
+            a:hover
+                background-color: #2e2a2a
+
+        .icon_talk,
+        .icon_war
+            width: 64px
+            height: 64px
+            display: block
+            left: 140px
+            bottom: 70px
+            position: absolute
+
+        .icon_talk
+            background: transparent url(talk.png) no-repeat top left
+
+        .icon_war
+            background: transparent url(war.png) no-repeat top left
